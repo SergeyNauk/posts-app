@@ -1,0 +1,52 @@
+.header-component {
+  height: 100px;
+  background-color: #FF9340; }
+  .header-component .header-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header-component .header-content .header-logo {
+      display: flex;
+      justify-content: center; }
+      .header-component .header-content .header-logo a {
+        text-decoration: none;
+        color: white;
+        font-size: 36px;
+        padding: 7px;
+        border: solid 2px white;
+        border-radius: 7px; }
+    .header-component .header-content .header-menu {
+      display: flex; }
+      .header-component .header-content .header-menu ul {
+        display: flex;
+        justify-content: center;
+        width: 100%; }
+        .header-component .header-content .header-menu ul li {
+          cursor: pointer;
+          position: relative;
+          margin-left: 5%;
+          font-size: 20px;
+          font-family: "Hobo Std"; }
+          .header-component .header-content .header-menu ul li:before {
+            display: block;
+            position: absolute;
+            bottom: 120%;
+            content: "";
+            height: 2px;
+            width: 0;
+            background-color: white;
+            transition: width .5s ease-in-out, left .5s ease-in-out; }
+          .header-component .header-content .header-menu ul li:hover:before {
+            width: 100%;
+            bottom: 120%;
+            background-color: white; }
+          .header-component .header-content .header-menu ul li a {
+            text-decoration: none;
+            color: white; }
+
+@media (max-width: 767px) {
+  .header-component .header-content .header-logo {
+    display: none; }
+  .header-component .header-content .header-menu {
+    width: 100%; } }

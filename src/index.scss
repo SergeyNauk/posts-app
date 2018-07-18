@@ -1,0 +1,60 @@
+@import "reset";
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: #FFB073;
+}
+
+.flex-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto 0 auto;
+}
+
+.row {
+  padding: 0 15px 0 15px;
+  width: 100%;
+}
+
+/*-----------custom grid---------------*/
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: (100%/12) * $i;
+  }
+}
+
+/*------------media-------------------*/
+
+@media (max-width: 1280px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 680px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 360px;
+  }
+}
