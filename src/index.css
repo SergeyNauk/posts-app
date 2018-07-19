@@ -44,8 +44,8 @@ body {
   justify-content: space-between; }
 
 .container {
-  width: 1140px;
-  margin: 0 auto 0 auto; }
+  width: 80%;
+  margin: 0 10% 0 10%; }
 
 .row {
   padding: 0 15px 0 15px;
@@ -89,18 +89,27 @@ body {
   width: 100%; }
 
 /*------------media-------------------*/
+/*
 @media (max-width: 1280px) {
   .container {
-    width: 900px; } }
+    width: 900px;
+  }
+}
 
 @media (max-width: 991px) {
   .container {
-    width: 680px; } }
+    width: 680px;
+  }
+}
 
 @media (max-width: 767px) {
   .container {
-    width: 480px; } }
+    width: 480px;
+  }
+}
 
 @media (max-width: 540px) {
   .container {
-    width: 360px; } }
+    width: 360px;
+  }
+}*/

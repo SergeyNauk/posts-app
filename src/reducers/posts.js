@@ -2,7 +2,8 @@ import * as types from '../constants';
 
 const initialState = {
     posts: [],
-    targetPost: {}
+    targetPost: {},
+    comments: '',
 };
 
 export default function posts(state = initialState, action) {
@@ -14,6 +15,10 @@ export default function posts(state = initialState, action) {
         case types.GET_TARGET_POST_SUCCESS:
             return {
                 ...state, targetPost: action.payload
+            };
+        case types.GET_COMMENTS_SUCCESS:
+            return {
+                ...state, comments: action.payload
             };
         default:
         return state;
